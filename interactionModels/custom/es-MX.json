@@ -1,0 +1,121 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "datos covid",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "EstadisticasIntent",
+          "slots": [
+            {
+              "name": "param_detect",
+              "type": "param_detect"
+            },
+            {
+              "name": "departamento",
+              "type": "departamento"
+            }
+          ],
+          "samples": [
+            "cuantos {param_detect} hay en {departamento}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "FALLECIDOS",
+              "name": {
+                "value": "FALLECIDOS",
+                "synonyms": [
+                  "muertes"
+                ]
+              }
+            },
+            {
+              "id": "TOTAL_CASOS",
+              "name": {
+                "value": "TOTAL_CASOS",
+                "synonyms": [
+                  "casos totales",
+                  "TOTAL de CASOS"
+                ]
+              }
+            },
+            {
+              "id": "PRUEBA_ANTIGENO",
+              "name": {
+                "value": "PRUEBA ANTIGENO",
+                "synonyms": [
+                  "PRUEBA de ANTIGENO",
+                  "PRUEBAs ANTIGENO"
+                ]
+              }
+            },
+            {
+              "id": "PRUEBA_RAPIDA",
+              "name": {
+                "value": "PRUEBA RAPIDA"
+              }
+            },
+            {
+              "id": "PCR",
+              "name": {
+                "value": "pcr"
+              }
+            }
+          ],
+          "name": "param_detect"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "arequipa"
+              }
+            },
+            {
+              "name": {
+                "value": "lima",
+                "synonyms": [
+                  "LIMA METROPOLITANA"
+                ]
+              }
+            }
+          ],
+          "name": "departamento"
+        }
+      ]
+    }
+  },
+  "version": "3"
+}
